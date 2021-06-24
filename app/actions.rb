@@ -13,7 +13,7 @@ end
 # end
 
 get '/' do
-  @finstagram_post = FinstagramPost.order(created_at: :desc)
+  @finstagram_posts = FinstagramPost.order(created_at: :desc)
   erb(:index)
 end
   
